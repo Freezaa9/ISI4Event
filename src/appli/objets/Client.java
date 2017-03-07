@@ -14,13 +14,19 @@ public class Client {
     private String nom;
     private String prenom;
     private String adresse;
-    
-    public Client (Integer id_client,String nom,String prenom,String adresse){
-        this.id_client=id_client;
-        this.nom=nom;
-        this.prenom=prenom;
-        this.adresse=adresse;
+    private String mail; 
+    private String téléphone;
+
+    public Client(Integer id_client, String nom, String prenom, String adresse, String mail, String téléphone) {
+        this.id_client = id_client;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.mail = mail;
+        this.téléphone = téléphone;
     }
+
+    
 
     public Integer getId_client() {
         return id_client;
@@ -54,5 +60,21 @@ public class Client {
         this.adresse = adresse;
     }
 
+    public String getTéléphone() {
+        return téléphone;
+    }
+
+    public void setTéléphone(String téléphone) {
+        this.téléphone = téléphone;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+    
     
 }
