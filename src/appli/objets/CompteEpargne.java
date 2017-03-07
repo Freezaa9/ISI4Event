@@ -5,10 +5,37 @@
  */
 package appli.objets;
 
+import java.util.Date;
+
 /**
  *
- * @author Geoffrey
+ * @author Jordi
  */
-public class CompteEpargne {
+public class CompteEpargne extends Compte{ 
+    
+    private double tauxInteret;
+    private String typeEpargne;
+    
+    public CompteEpargne(Integer id_compte, double solde, Date dateOuverture, double tauxInteret, String typeEpargne) {
+        super(id_compte, solde, dateOuverture);
+        this.tauxInteret = tauxInteret;
+        this.typeEpargne = typeEpargne;
+    }
+
+    public double getTauxInteret() {
+        return tauxInteret;
+    }
+
+    public String getTypeEpargne() {
+        return typeEpargne;
+    }
+
+    public void setTauxInteret(Integer tauxInteret) {
+        this.tauxInteret = tauxInteret;
+    }
+
+    public void setTypeEpargne(String typeEpargne) {
+        this.typeEpargne = typeEpargne;
+    }
     
 }
