@@ -17,8 +17,8 @@ public class CompteCourant extends Compte {
     private double montantAlimentation;
     private double seuilEpargne;
     private CompteCourantState state;
-    private CompteEpargneADebiter compteEpargne;
-    private CompteEpargneACrediter compteEpargne;
+    private CompteEpargne compteEpargneADebiter;
+    private CompteEpargne compteEpargneACrediter;
 
 
     public CompteCourant(Integer id_compte, double solde, Date dateOuverture, double seuilCritique, double montantAlimentation, double seuilEpargne) {
@@ -67,21 +67,22 @@ public class CompteCourant extends Compte {
         this.state = state;
     }
 
-    public CompteEpargneADebiter getCompteEpargne() {
-        return compteEpargne;
+    public CompteEpargne getCompteEpargneADebiter() {
+        return compteEpargneADebiter;
     }
 
-    public void setCompteEpargne(CompteEpargneADebiter compteEpargne) {
-        this.compteEpargne = compteEpargne;
+    public void setCompteEpargneADebiter(CompteEpargne compteEpargneADebiter) {
+        this.compteEpargneADebiter = compteEpargneADebiter;
     }
 
-    public CompteEpargneACrediter getCompteEpargne() {
-        return compteEpargne;
+    public CompteEpargne getCompteEpargneACrediter() {
+        return compteEpargneACrediter;
     }
 
-    public void setCompteEpargne(CompteEpargneACrediter compteEpargne) {
-        this.compteEpargne = compteEpargne;
+    public void setCompteEpargneACrediter(CompteEpargne compteEpargneACrediter) {
+        this.compteEpargneACrediter = compteEpargneACrediter;
     }
+
     
     
 
